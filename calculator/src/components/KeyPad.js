@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { calculatorButtons } from './calculator-base-button-data';
 
 class Keypad extends Component{
     render(){
@@ -23,12 +24,12 @@ class Keypad extends Component{
                 <button name="7" onClick={e => this.props.onClick(e.target.name)}>7</button>
                 <button name="8" onClick={e => this.props.onClick(e.target.name)}>8</button>
                 <button name="9" onClick={e => this.props.onClick(e.target.name)}>9</button>
-                <button name="x" onClick={e => this.props.onClick(e.target.name)}>10</button>
+                <button name="x" onClick={e => this.props.onClick(e.target.name)}>{"\u00d7"}</button>
 
                 <button name="0" onClick={e => this.props.onClick(e.target.name)}>0</button>
                 <button name="." onClick={e => this.props.onClick(e.target.name)}>.</button>
                 <button name="=" onClick={e => this.props.onClick(e.target.name)}>=</button>
-                <button name="/" onClick={e => this.props.onClick(e.target.name)}>/</button>
+                <button name="/" onClick={e => this.props.onClick(e.target.name)}>{"\u00f7"}</button>
 
             </div>
         )
