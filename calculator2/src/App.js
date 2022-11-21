@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import './App.css';
 import Display from './components/Display';
 import Button from './components/Button';
@@ -9,9 +9,15 @@ function App() {
 
   const [input, setInput] = useState("")
 
-  const handleClick = (value) => {
-    setInput(value)
+  useEffect(() => {
     console.log(input)
+  }, [input])
+
+  const handleClick = (value) => {
+    setInput(() => {
+      return value
+    })
+    // console.log(input)
   }
 
   return (
