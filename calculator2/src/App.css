@@ -13,7 +13,19 @@
   color: white;
 }
 
-.buttons {
+h1 {
+  margin: 0;
+}
+
+.display {
+  width: 600px;
+  height: 100px;
+  margin: 20px 0 20px 0;
+  border: 2px solid white;
+}
+
+
+.buttonBox {
   display: grid;
   grid-template-columns: repeat(6, 100px);
   grid-template-rows: repeat(4, 100px);
@@ -28,6 +40,12 @@
   text-align: center;
   background-color: beige;
   color: black;
+}
+
+.buttons .button:hover,
+.buttons .button:focus,
+.buttons .button:active {
+  background-color: burlywood;
 }
 
 .ac {

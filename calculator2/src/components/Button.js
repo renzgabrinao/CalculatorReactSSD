@@ -1,12 +1,13 @@
-import { calculatorButtons } from "./calculator-base-button-data";
+import React from 'react'
 
-const Button = () => {
-    let classes = calculatorButtons.map((x) => `button ${x.className}`)
+const Button = ({className, value, text, type, onClick}) => {
+
     return (
-        <div className="buttons">
-          {calculatorButtons.map((x, key) => (
-            <div className={classes[key]}>{x.text}</div>
-          ))}
+        <div className={`button ${className}`}
+              data-value={value}
+              data-type={type}
+              onClick={onClick}>
+          {text}
         </div>
       );
 }
