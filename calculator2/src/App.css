@@ -23,6 +23,14 @@ h1 {
   margin: 20px 0 20px 0;
   border: 2px solid white;
   border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.display span {
+  font-size: 2em;
 }
 
 
@@ -31,8 +39,8 @@ h1 {
   grid-template-columns: repeat(6, 100px);
   grid-template-rows: repeat(4, 100px);
   justify-content: center;
-  /* justify-items: center; */
 }
+
 
 .button {
   margin: 2px;
