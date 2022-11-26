@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import './App.css';
 import Display from './components/Display';
 import Button from './components/Button';
+import Footer from './components/Footer';
 import { calculatorButtons } from "./components/calculator-base-button-data";
 
 let override = false
@@ -123,6 +124,7 @@ function App() {
             })
           }
         </div>
+        <Footer />
       </header>
     </div>
   );
