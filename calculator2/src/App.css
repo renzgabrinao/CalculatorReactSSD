@@ -31,8 +31,7 @@ h1 {
   font-size: 2em;
   padding-right: 35px;
 }
-
-
+  
 .buttonBox {
   display: grid;
   grid-template-columns: repeat(4, 100px);
