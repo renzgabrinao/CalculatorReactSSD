@@ -40,6 +40,7 @@ function App() {
         case "All Clear":
           setInput("0")
           setPrevInput("")
+          override = false
           break;
 
         default:
@@ -49,7 +50,7 @@ function App() {
   }
 
   const handleButtons = (button) => {
-    if(override === true){
+    if(override === true && prevInput === "" ){
       setInput(`${button.value}`)
       setPrevInput("")
       override = !override
